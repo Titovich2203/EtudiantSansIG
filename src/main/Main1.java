@@ -4,14 +4,14 @@ import models.Etudiant;
 import services.EtudiantI;
 import services.IEtudiant;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main1 {
     public static void main(String[] args) {
-        /*Scanner sc = new Scanner(System.in);
         IEtudiant s = new EtudiantI();
-        List<Etudiant> list = new List<Etudiant>;*/
+        ArrayList<Etudiant> list = new ArrayList<Etudiant>();
         int choix;
         do {
             choix = menu();
@@ -19,10 +19,16 @@ public class Main1 {
             switch (choix)
             {
                 case 1:
-                    System.out.println("1");
+                    s.ajoutEtudiant(list);
+                    //ca bosse
+                    //sans te mentir je commence a avoir sommeil
+                    //tkt je vai mettre le projet sur ton pc
+                    //donne moi justl'acces et vas dormir
+                    //comment je te donne l'qcce
+                    //teamviwer envoi
                     break;
                 case 2:
-                    System.out.println("2");
+                    s.afficher(list);
                     break;
                 case 3:
                     System.out.println("3");

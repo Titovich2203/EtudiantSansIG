@@ -4,19 +4,19 @@ import models.Etudiant;
 import models.Loge;
 import models.NonLoge;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public interface IEtudiant {
 
-    public void ajoutEtudiant(List<Etudiant> list);
+    public void ajoutEtudiant(ArrayList<Etudiant> list);
 
-    public List<Loge> afficherLoge(List<Etudiant> list);
+    public ArrayList<Loge> afficherLoge(ArrayList<Etudiant> list);
 
-    public List<NonLoge> afficherNonLoge(List<Etudiant> list);
+    public ArrayList<NonLoge> afficherNonLoge(ArrayList<Etudiant> list);
 
-    public void afficher(List<Etudiant> list);
+    public void afficher(ArrayList<Etudiant> list);
 
-    public Etudiant rechercherEtudiant(List<Etudiant> list, String mat);
+    public Etudiant rechercherEtudiant(ArrayList<Etudiant> list, String mat);
 
-    public int sommeAide(List<Etudiant> list);
+    public int sommeAide(ArrayList<Etudiant> list);
 }
