@@ -27,6 +27,7 @@ public class EtudiantI implements IEtudiant {
         {
             et = new NonLoge();
         }
+        et.saisie();
         list.add(et);
     }
 
@@ -281,8 +282,12 @@ public class EtudiantI implements IEtudiant {
     }
 
     @Override
-    public Etudiant afficher(List<Etudiant> list) {
-        return null;
+    public void afficher(List<Etudiant> list) {
+        for(Etudiant et:list){
+            System.out.println("\n==================================");
+            System.out.println(et.show());
+            System.out.println("\n==================================");
+        }
     }
 
     @Override

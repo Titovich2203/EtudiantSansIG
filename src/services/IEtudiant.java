@@ -14,7 +14,7 @@ public interface IEtudiant {
 
     public List<NonLoge> afficherNonLoge(List<Etudiant> list);
 
-    public Etudiant afficher(List<Etudiant> list);
+    public void afficher(List<Etudiant> list);
 
     public Etudiant rechercherEtudiant(List<Etudiant> list, String mat);
 

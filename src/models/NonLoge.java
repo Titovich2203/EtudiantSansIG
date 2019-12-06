@@ -1,10 +1,11 @@
 package models;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class NonLoge extends Etudiant{
-    private int aide;
     private String adresse;
+    private static int aide = 100000;
 
     public NonLoge() {
     }
@@ -31,6 +32,22 @@ public class NonLoge extends Etudiant{
         this.adresse = adresse;
     }
 
+    public String show()
+    {
+        return "["+super.show()+", "+adresse+", "+aide+"]";
+    }
+    public String toString()
+    {
+        return "["+super.toString()+", "+adresse+", "+aide+"]";
+    }
+    public void saisie()
+    {
+        super.saisie();
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Entrez votre adresse");
+        adresse = sc.nextLine();
+
+    }
     @Override
     public boolean isLoge() {
         return false;
